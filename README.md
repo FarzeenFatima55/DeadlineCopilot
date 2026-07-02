@@ -1,107 +1,81 @@
-# 🚀 DeadlinePilot AI
+# 🚀 DeadlineCopilot
 
-> An AI-powered productivity companion that helps students and professionals stay ahead of deadlines instead of reacting to them.
+An AI-powered productivity companion that helps students and professionals stay ahead of deadlines instead of reacting to them.
 
-🌐 **Live Demo:** https://deadlinepilot-ai-1044071676251.asia-south1.run.app
+Built by [Farzeen Fatima](https://github.com/FarzeenFatima55).
 
 ---
 
-# 📖 Overview
+## 📖 Overview
 
 Managing multiple assignments, projects, meetings, and deadlines is overwhelming. Traditional task managers only remind users after tasks are already planned.
 
-**DeadlinePilot AI** acts as an intelligent productivity companion that:
+**DeadlineCopilot** acts as an intelligent productivity companion that:
 
-- Prioritizes deadlines
-- Uses AI to analyze tasks
+- Prioritizes deadlines automatically
+- Uses AI to analyze and summarize tasks
 - Captures work from images and documents
-- Integrates with Google Calendar
+- Integrates directly with Google Calendar
 - Keeps productivity features available even when external AI services are unavailable
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-## 🔐 Google Authentication
-
+### 🔐 Google Authentication
 - Secure Firebase Authentication
 - One-click Google Sign In
 - Persistent user sessions
 
----
-
-## 📅 Smart Deadline Management
-
+### 📅 Smart Deadline Management
 - Create and organize deadlines
 - Track upcoming work
 - Priority-based task organization
 
----
-
-## 🤖 AI Task Analysis
-
-Powered by **Google Gemini**
-
+### 🤖 AI Task Analysis
+Powered by Google Gemini
 - Task summarization
 - Intelligent insights
 - AI-generated recommendations
 - Productivity assistance
 
----
+### 📷 Capture Hub
+Extract information from images, notes, and documents. AI converts captured information into actionable tasks.
 
-## 📷 Capture Hub
-
-Extract information from:
-
-- Images
-- Notes
-- Documents
-
-AI converts captured information into actionable tasks.
-
----
-
-## 📆 Google Calendar Integration
-
+### 📆 Google Calendar Integration
 - Connect Google Calendar
 - Sync events
 - View upcoming schedule
 - Stay organized across platforms
 
----
-
-## ⚡ Modern Dashboard
-
+### ⚡ Modern Dashboard
 - Responsive UI
-- Clean productivity-focused interface
+- Clean, productivity-focused interface
 - Fast performance using Next.js
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
-## Frontend
-
+**Frontend**
 - Next.js 16
 - React 19
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 
-## Backend / Services
-
+**Backend / Services**
 - Firebase Authentication
 - Cloud Firestore
 - Google Gemini API
 - Google Calendar API
 
-## Deployment
-
+**Deployment**
 - Google Cloud Run
 
 ---
 
-# 🏗 Architecture
+## 🏗 Architecture
 
 ```
                 User
@@ -120,33 +94,24 @@ AI converts captured information into actionable tasks.
 
 ---
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
-## Clone the repository
-
-```bash
-git clone https://github.com/kgupta-codes/deadlinepilot-ai.git
-```
+### 1. Clone the repository
 
 ```bash
-cd deadlinepilot-ai/frontend
+git clone https://github.com/FarzeenFatima55/DeadlineCopilot.git
+cd DeadlineCopilot/frontend
 ```
 
-## Install dependencies
+### 2. Install dependencies
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
-## Create environment file
+### 3. Set up environment variables
 
-Create:
-
-```
-.env.local
-```
-
-Add:
+Create a `.env.local` file in the `frontend` folder:
 
 ```env
 NEXT_PUBLIC_FIREBASE_API_KEY=YOUR_KEY
@@ -163,34 +128,27 @@ GOOGLE_CALENDAR_CLIENT_SECRET=YOUR_SECRET
 GOOGLE_CALENDAR_COOKIE_SECRET=YOUR_COOKIE_SECRET
 ```
 
----
-
-## Run locally
+### 4. Run locally
 
 ```bash
-npm install
 npm run dev
 ```
 
-Open
-
-```
-http://localhost:3000
-```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
 frontend/
 │
-├── app/
-├── components/
-├── hooks/
-├── lib/
-├── public/
-├── src/
+├── app/            # Routes and pages (Next.js App Router)
+├── components/     # Reusable UI components
+├── hooks/          # Custom React hooks (auth, tasks, etc.)
+├── lib/            # Firebase config, Gemini API calls, utilities
+├── public/         # Static assets
+├── src/            # Core source files
 │
 ├── package.json
 └── Dockerfile
@@ -198,53 +156,52 @@ frontend/
 
 ---
 
-# ☁ Deployment
+## ☁ Deployment
 
-Deployed on **Google Cloud Run**
+Deployed on **Google Cloud Run**.
 
-Live URL:
+```bash
+gcloud run deploy --source .
+```
 
-https://deadlinepilot-ai-1044071676251.asia-south1.run.app
+*Live demo link coming soon.*
 
 ---
 
-# 🎯 Problem Statement
+## 🎯 Problem Statement
 
 Students and professionals often struggle with:
 
-- Multiple deadlines
+- Multiple overlapping deadlines
 - Missed assignments
-- Poor prioritization
-- Fragmented productivity tools
+- Poor task prioritization
+- Fragmented productivity tools across platforms
 
-DeadlinePilot AI combines AI assistance, task management, and calendar integration into one unified productivity platform.
-
----
-
-# 🔮 Future Improvements
-
-- AI deadline prediction
-- Email integration
-- Team collaboration
-- Notification system
-- Mobile application
-- Offline support
-- AI productivity analytics
+**DeadlineCopilot** combines AI assistance, task management, and calendar integration into one unified productivity platform — built to help people stay ahead, not catch up.
 
 ---
 
-# 👨‍💻 Developer
+## 🔮 Future Improvements
 
-**Kunal Gupta**
-
-B.Tech Student  
-Jaypee University of Information Technology
-
-GitHub:
-https://github.com/kgupta-codes
+- [ ] AI-based deadline prediction
+- [ ] Email integration
+- [ ] Team collaboration features
+- [ ] Smart notification system
+- [ ] Mobile application
+- [ ] Offline support
+- [ ] AI-powered productivity analytics
 
 ---
 
-# 📄 License
+## 👩‍💻 Author
 
-This project was developed as part of a hackathon submission.
+**Farzeen Fatima**
+Web Developer | AI Automation Engineer | CS Student @ Sukkur IBA University
+
+- GitHub: [@FarzeenFatima55](https://github.com/FarzeenFatima55)
+
+---
+
+## 📄 License
+
+This project is open for learning and personal use. Feel free to fork and build on it.
