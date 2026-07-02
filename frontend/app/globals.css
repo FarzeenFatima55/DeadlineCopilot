@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060708;
+  --foreground: #f5f7fb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Inter", "Segoe UI", "SF Pro Display", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(124, 58, 237, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.1), transparent 28%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+section {
+  scroll-margin-top: 88px;
+}
